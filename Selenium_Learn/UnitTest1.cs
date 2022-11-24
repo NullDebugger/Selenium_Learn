@@ -5,6 +5,7 @@ using OpenQA.Selenium.Support.UI;
 using static System.Net.Mime.MediaTypeNames;
 using System;
 using System.Numerics;
+using OpenQA.Selenium.Firefox;
 
 namespace Selenium_Learn;
 
@@ -60,6 +61,9 @@ public class Tests
         [Test, Order(0)]
         public void test_validData_login()
         {
+            //Enter the data you want to test
+            string enter_login_username = "kchen@jamesanthonyconsulting.com.au";
+            string enter_login_password = "******";
             //------- 1: The user navigates to Login page ---------
             brow.Goto(test_url);
             System.Threading.Thread.Sleep(4000);
@@ -81,12 +85,12 @@ public class Tests
             //Access 'username' text field by element's Xpath
             By Locator_username = By.XPath("//*[@id=\"okta-signin-username\"]");
             IWebElement text_username = (IWebElement)brow.GetWebDriver.FindElement(Locator_username);
-            text_username.SendKeys("kchen@jamesanthonyconsulting.com.au");
+            text_username.SendKeys(enter_login_username);
 
             //------- 4: In the ''password' field, the user enters the registered password -------
             By Locator_password = By.XPath("//*[@id=\"okta-signin-password\"]");
             IWebElement text_password = (IWebElement)brow.GetWebDriver.FindElement(Locator_password);
-            text_password.SendKeys("pan449580866");
+            text_password.SendKeys(enter_login_password);
 
             //------- 5: The user clicks ‘Sign In'. -------
             By Locator_okta_login = By.XPath("//*[@id=\"okta-signin-submit\"]");
@@ -109,6 +113,9 @@ public class Tests
         [Test, Order(1)]
         public void test_invalidDate_login()
         {
+            //Enter the data you want to test
+            string enter_login_username = "test@jamesanthonyconsulting.com.au";
+            string enter_login_password = "12345678";
             //------- 1: The user navigates to Login page ---------
             brow.Goto(test_url);
             //Explcit wait until page loading finished and find the login button
@@ -138,12 +145,12 @@ public class Tests
             //Access 'username' text field by element's Xpath
             By Locator_username = By.XPath("//*[@id=\"okta-signin-username\"]");
             IWebElement text_username = (IWebElement)brow.GetWebDriver.FindElement(Locator_username);
-            text_username.SendKeys("test@jamesanthonyconsulting.com.au");
+            text_username.SendKeys(enter_login_username);
 
             //------- 4: In the ''password' field, the user enters the invalid password -------
             By Locator_password = By.XPath("//*[@id=\"okta-signin-password\"]");
             IWebElement text_password = (IWebElement)brow.GetWebDriver.FindElement(Locator_password);
-            text_password.SendKeys("test123456");
+            text_password.SendKeys(enter_login_password);
 
             //------- 5: The user clicks ‘Sign In'. -------
             By Locator_okta_login = By.XPath("//*[@id=\"okta-signin-submit\"]");
@@ -172,6 +179,10 @@ public class Tests
         //---------- This function is used to Login and navigate to Task-list page ------------------------
         public void login_action()
         {
+            //Enter the data you want to test
+            string enter_login_username = "kchen@jamesanthonyconsulting.com.au";
+            string enter_login_password = "*****";
+
             //-------The user navigates to Login page ---------
             brow.Goto(test_url);
             WebDriverWait wait = new WebDriverWait(brow.GetWebDriver, TimeSpan.FromMinutes(1));
@@ -202,12 +213,12 @@ public class Tests
             //Access 'username' text field by element's Xpath
             By Locator_username = By.XPath("//*[@id=\"okta-signin-username\"]");
             IWebElement text_username = (IWebElement)brow.GetWebDriver.FindElement(Locator_username);
-            text_username.SendKeys("kchen@jamesanthonyconsulting.com.au");
+            text_username.SendKeys(enter_login_username);
 
             //------- In the ''password' field, the user enters the registered password -------
             By Locator_password = By.XPath("//*[@id=\"okta-signin-password\"]");
             IWebElement text_password = (IWebElement)brow.GetWebDriver.FindElement(Locator_password);
-            text_password.SendKeys("pan449580866");
+            text_password.SendKeys(enter_login_password);
 
             //------- The user clicks ‘Sign In'. -------
             By Locator_okta_login = By.XPath("//*[@id=\"okta-signin-submit\"]");

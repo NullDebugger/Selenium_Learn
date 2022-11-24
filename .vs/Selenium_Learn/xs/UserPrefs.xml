@@ -1,7 +1,13 @@
 ﻿<Properties StartupConfiguration="{656CF3D6-E071-4CFC-9196-A705C34E8CF2}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Selenium__Learn PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Selenium_Learn/UnitTest1.cs">
     <Files>
-      <File FileName="Selenium_Learn/UnitTest1.cs" Line="775" Column="37" />
+      <File FileName="Selenium_Learn/UnitTest1.cs" Line="376" Column="30" />
       <File FileName="Selenium_Learn/Usings.cs" />
     </Files>
     <Pads>
@@ -9,23 +15,28 @@
         <State name="__root__">
           <Node name="Selenium_Learn" expanded="True">
             <Node name="Selenium_Learn" expanded="True">
-              <Node name="UnitTest1.cs" selected="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True">
+                  <Node name="Selenium.WebDriver.MSEdgeDriver" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="Selenium_Learn" expanded="True" />
+          <Node name="Selenium_Learn" expanded="True">
+            <Node name="Selenium_Learn" expanded="True">
+              <Node name="Selenium_Learn" expanded="True">
+                <Node name="Tests+Nunit_Demo_Login" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Selenium__Learn PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

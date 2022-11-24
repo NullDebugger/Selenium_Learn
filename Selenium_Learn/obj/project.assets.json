@@ -399,6 +399,12 @@
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
         }
       },
+      "Selenium.WebDriver.MSEdgeDriver/107.0.1418.42": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.MSEdgeDriver.targets": {}
+        }
+      },
       "System.Reflection.Metadata/1.6.0": {
         "type": "package",
         "compile": {
@@ -1348,6 +1354,24 @@
         "selenium.webdriver.chromedriver.nuspec"
       ]
     },
+    "Selenium.WebDriver.MSEdgeDriver/107.0.1418.42": {
+      "sha512": "ANp1jS98JS++8MtON6Zz82iszZ8NWh5XVYYM5ZRRph1bv7LLqB/j0KTDJ+Hg5S3dGrdZbn5q6AWdRiIVmMgXVg==",
+      "type": "package",
+      "path": "selenium.webdriver.msedgedriver/107.0.1418.42",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/DefinePropertiesMSEdgeDriver.targets",
+        "build/Selenium.WebDriver.MSEdgeDriver.targets",
+        "driver/linux64/msedgedriver",
+        "driver/mac64/msedgedriver",
+        "driver/win32/msedgedriver.exe",
+        "driver/win64/msedgedriver.exe",
+        "selenium.webdriver.msedgedriver.107.0.1418.42.nupkg.sha512",
+        "selenium.webdriver.msedgedriver.nuspec"
+      ]
+    },
     "System.Reflection.Metadata/1.6.0": {
       "sha512": "COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
       "type": "package",
@@ -1379,6 +1403,7 @@
       "Selenium.Support >= 4.5.1",
       "Selenium.WebDriver >= 4.5.1",
       "Selenium.WebDriver.ChromeDriver >= 107.0.5304.6200",
+      "Selenium.WebDriver.MSEdgeDriver >= 107.0.1418.42",
       "coverlet.collector >= 3.1.2"
     ]
   },
@@ -1446,6 +1471,10 @@
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",
             "version": "[107.0.5304.6200, )"
+          },
+          "Selenium.WebDriver.MSEdgeDriver": {
+            "target": "Package",
+            "version": "[107.0.1418.42, )"
           },
           "coverlet.collector": {
             "target": "Package",

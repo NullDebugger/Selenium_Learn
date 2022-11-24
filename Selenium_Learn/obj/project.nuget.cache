@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DPp/6d6la0jX3lpfyuHb5rjTsdP73ftuf5vSOofUYoMPTsD1k4azAF62M1raBZXnD2aN+Tyk8MUWQDDxHtkppA==",
+  "dgSpecHash": "chHPI7l+eWtsX4OoF6wpeYPl0qkmKmE0YgT6auQBsjT60gL9KHtV4reXmoCq81BgBQ+eNL0g1dElQPtOLYCBeA==",
   "success": true,
   "projectFilePath": "/Users/ken/Documents/Visual_Studio/Selenium_Learn/Selenium_Learn/Selenium_Learn.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,7 @@
     "/Users/ken/.nuget/packages/selenium.support/4.5.1/selenium.support.4.5.1.nupkg.sha512",
     "/Users/ken/.nuget/packages/selenium.webdriver/4.5.1/selenium.webdriver.4.5.1.nupkg.sha512",
     "/Users/ken/.nuget/packages/selenium.webdriver.chromedriver/107.0.5304.6200/selenium.webdriver.chromedriver.107.0.5304.6200.nupkg.sha512",
+    "/Users/ken/.nuget/packages/selenium.webdriver.msedgedriver/107.0.1418.42/selenium.webdriver.msedgedriver.107.0.1418.42.nupkg.sha512",
     "/Users/ken/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
   ],
   "logs": []

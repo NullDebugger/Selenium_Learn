@@ -66,6 +66,10 @@
               "target": "Package",
               "version": "[107.0.5304.6200, )"
             },
+            "Selenium.WebDriver.MSEdgeDriver": {
+              "target": "Package",
+              "version": "[107.0.1418.42, )"
+            },
             "coverlet.collector": {
               "target": "Package",
               "version": "[3.1.2, )"
