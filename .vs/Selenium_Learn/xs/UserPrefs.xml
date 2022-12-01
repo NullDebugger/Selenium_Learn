@@ -1,14 +1,16 @@
 ﻿<Properties StartupConfiguration="{656CF3D6-E071-4CFC-9196-A705C34E8CF2}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.Selenium__Learn PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Selenium_Learn/UnitTest1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Selenium_Learn/BaseClass/BaseTest.cs">
     <Files>
-      <File FileName="Selenium_Learn/UnitTest1.cs" Line="376" Column="30" />
-      <File FileName="Selenium_Learn/Usings.cs" />
+      <File FileName="Selenium_Learn/Fillout_Patient_Form_Test.cs" Line="22" Column="36" />
+      <File FileName="Selenium_Learn/Login_Test.cs" Line="78" Column="30" />
+      <File FileName="Selenium_Learn/BaseClass/BaseTest.cs" Line="51" Column="36" />
+      <File FileName="Selenium_Learn/Create_Patient_Test.cs" Line="53" Column="21" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,9 +19,9 @@
             <Node name="Selenium_Learn" expanded="True">
               <Node name="Dependencies" expanded="True">
                 <Node name="FrameworkReferences" expanded="True" />
-                <Node name="PackageDependencies" expanded="True">
-                  <Node name="Selenium.WebDriver.MSEdgeDriver" selected="True" />
-                </Node>
+              </Node>
+              <Node name="BaseClass" expanded="True">
+                <Node name="BaseTest.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -30,7 +32,11 @@
           <Node name="Selenium_Learn" expanded="True">
             <Node name="Selenium_Learn" expanded="True">
               <Node name="Selenium_Learn" expanded="True">
-                <Node name="Tests+Nunit_Demo_Login" expanded="True" />
+                <Node name="Create_Patient_Test" expanded="True" />
+                <Node name="Fillout_Patient_Form_Test" expanded="True">
+                  <Node name="test_fillout_data_Central" selected="True" />
+                </Node>
+                <Node name="Login_Test" expanded="True" />
               </Node>
             </Node>
           </Node>

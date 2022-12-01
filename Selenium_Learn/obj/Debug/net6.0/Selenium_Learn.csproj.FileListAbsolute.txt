@@ -98,3 +98,6 @@
 /Users/ken/Documents/Visual_Studio/Selenium_Learn/Selenium_Learn/obj/Debug/net6.0/Selenium_Learn.pdb
 /Users/ken/Documents/Visual_Studio/Selenium_Learn/Selenium_Learn/obj/Debug/net6.0/Selenium_Learn.genruntimeconfig.cache
 /Users/ken/Documents/Visual_Studio/Selenium_Learn/Selenium_Learn/obj/Debug/net6.0/ref/Selenium_Learn.dll
+/Users/ken/Documents/Visual_Studio/Selenium_Learn/Selenium_Learn/bin/Debug/net6.0/selenium-manager/linux/selenium-manager
+/Users/ken/Documents/Visual_Studio/Selenium_Learn/Selenium_Learn/bin/Debug/net6.0/selenium-manager/macos/selenium-manager
+/Users/ken/Documents/Visual_Studio/Selenium_Learn/Selenium_Learn/bin/Debug/net6.0/selenium-manager/windows/selenium-manager.exe

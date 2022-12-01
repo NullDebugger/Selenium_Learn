@@ -1,0 +1,4 @@
+Test ID,S/O,Browser Screen,Sub-Screen (if applicable),Test Case,Test Scenario,Description,Test Data,Expected / Intended Results,Test Status
+1,Global,Login Screen,,Login,Check user login via OKta with vaild data,Lots,Lots,User can login and Web page redirects to the patient detial page,Passed
+2,Global,Login Screen,,Login,Check user login via OKta with invaild data,Lots,Lots,User can not login,Passed
+7,Central,Patient Record,Tasking,Task Detail,Test....,add later,Lots,Fill out data successfully,Failed:Error
