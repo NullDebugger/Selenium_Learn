@@ -1,16 +1,13 @@
 ﻿<Properties StartupConfiguration="{656CF3D6-E071-4CFC-9196-A705C34E8CF2}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Selenium__Learn PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Selenium_Learn/BaseClass/BaseTest.cs">
     <Files>
-      <File FileName="Selenium_Learn/Fillout_Patient_Form_Test.cs" Line="22" Column="36" />
-      <File FileName="Selenium_Learn/Login_Test.cs" Line="78" Column="30" />
-      <File FileName="Selenium_Learn/BaseClass/BaseTest.cs" Line="51" Column="36" />
-      <File FileName="Selenium_Learn/Create_Patient_Test.cs" Line="53" Column="21" />
+      <File FileName="Selenium_Learn/Scenario1_Central/New_Medication_Test.cs" />
+      <File FileName="Selenium_Learn/Scenario1_Central/New_Intravenous_Fluid_Order_Test.cs" />
+      <File FileName="Selenium_Learn/Scenario1_Central/Aeromed_Journey_Log_Test.cs" />
+      <File FileName="Selenium_Learn/BaseClass/BaseTest.cs" Line="153" Column="229" />
+      <File FileName="Selenium_Learn/Scenario1_Central/Arrival_Assess_Tests.cs" />
+      <File FileName="Selenium_Learn/Scenario1_Central/Search_Bar_Test.cs" />
+      <File FileName="Selenium_Learn/Scenario1_Central/PFA_Test.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,31 +15,23 @@
           <Node name="Selenium_Learn" expanded="True">
             <Node name="Selenium_Learn" expanded="True">
               <Node name="Dependencies" expanded="True">
-                <Node name="FrameworkReferences" expanded="True" />
-              </Node>
-              <Node name="BaseClass" expanded="True">
-                <Node name="BaseTest.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Selenium_Learn" expanded="True">
-            <Node name="Selenium_Learn" expanded="True">
-              <Node name="Selenium_Learn" expanded="True">
-                <Node name="Create_Patient_Test" expanded="True" />
-                <Node name="Fillout_Patient_Form_Test" expanded="True">
-                  <Node name="test_fillout_data_Central" selected="True" />
+                <Node name="PackageDependencies" expanded="True">
+                  <Node name="Selenium.WebDriver.ChromeDriver" selected="True" />
                 </Node>
-                <Node name="Login_Test" expanded="True" />
               </Node>
+              <Node name="BaseClass" expanded="True" />
+              <Node name="Scenario1_Central" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Selenium__Learn PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

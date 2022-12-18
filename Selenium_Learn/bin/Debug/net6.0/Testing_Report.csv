@@ -1,4 +1,12 @@
 Test ID,S/O,Browser Screen,Sub-Screen (if applicable),Test Case,Test Scenario,Description,Test Data,Expected / Intended Results,Test Status
-1,Global,Login Screen,,Login,Check user login via OKta with vaild data,Lots,Lots,User can login and Web page redirects to the patient detial page,Passed
-2,Global,Login Screen,,Login,Check user login via OKta with invaild data,Lots,Lots,User can not login,Passed
-7,Central,Patient Record,Tasking,Task Detail,Test....,add later,Lots,Fill out data successfully,Failed:Error
+16,Central,Patient record,Tasking,Aeromed Journey Log,Check whether can document jouney time: "First contact with patient Date/Time",Lots,Lots,,Passed
+9,Central,Patient record,Attachments,Attachment,Check whether can upload the attachment,Lots,Lots,,Passed
+10,Central,Patient record,Attachments,Attachment,Check whether can download the attachment,Lots,Lots,,Passed
+14,Central,Patient record,Tasking,Escort Accompanied,Check whether can add new person to Escort Accompanied ,Lots,Lots,,Passed
+15,Central,Patient record,Fluids & Drug Infusions,New Intravenous Fluid Order,Check whether can order the infusion on the Fluids & Drug Infusions tab  ,Lots,Lots,,Passed
+16,Central,Patient record,Medication,New Medication,Check whether can order the "PRN analgesia",Lots,Lots,,Passed
+11,Central,Patient record,PFA,Diagnosis container,Check whether can enter relevant information on diagnosis container,Lots,Lots,,Failed:Error
+12,Central,Patient record,PFA,Past Medical History container,Check whether can enter relevant information on diagnosis container,Lots,Lots,,Passed
+13,Central,Patient record,PFA,Past Medical History container,Check whether can enter relevant information on diagnosis container,Lots,Lots,,Passed
+8,Central,Task List,,Search Bar,Check whether can find the specifc patient's record in the EHR,Lots,Lots,page will jump into "Centre_ttttest" patient record page,Passed
+11,Central,Patient record,PFA,Diagnosis container,Check whether can enter relevant information on diagnosis container,Lots,Lots,,Passed

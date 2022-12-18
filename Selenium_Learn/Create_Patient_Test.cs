@@ -184,8 +184,8 @@ namespace Selenium_Learn
         public void test_create_patients_Central()
         {
             //Enter the data you want to test
-            string enter_central_form_firstname = "Central_Test";
-            string enter_central_form_lastname = "Test_2";
+            string enter_central_form_firstname = "Central_Scenario1";
+            string enter_central_form_lastname = "Test_1";
             string enter_central_form_age_year = "18";
             string enter_central_form_age_month = "4";
             string enter_central_form_age_day = "3";
@@ -240,78 +240,78 @@ namespace Selenium_Learn
             //--------------------------- 4.Fill out data for each S/ O ----------------------------
             //Fill out data for Central Patient form
             //First name
-            By Locator_central_form_firstname = By.XPath("/html/body/div[2]/div/div[1]/div/div/form/div[1]/div/div[1]/div[1]/input");
+            By Locator_central_form_firstname = By.XPath("//*[@id=\"a4e6640d-ee76-4d8a-9f8c-4fc3f04da607\"]");
             IWebElement central_form_firstname = (IWebElement)brow.GetWebDriver.FindElement(Locator_central_form_firstname);
             central_form_firstname.SendKeys(enter_central_form_firstname);
 
             //Last name
-            By Locator_central_form_lastname = By.XPath("/html/body/div[2]/div/div[1]/div/div/form/div[1]/div/div[1]/div[2]/input");
+            By Locator_central_form_lastname = By.XPath("//*[@id=\"85af3dc2-2f75-4467-9458-29aed08e0c2c\"]");
             IWebElement central_form_lastname = (IWebElement)brow.GetWebDriver.FindElement(Locator_central_form_lastname);
             central_form_lastname.SendKeys(enter_central_form_lastname);
             //DOB-unknow checked box
-            By Locator_central_dob_unknow = By.XPath("/html/body/div[2]/div/div[1]/div/div/form/div[1]/div/div[2]/div[2]/input");
+            By Locator_central_dob_unknow = By.XPath("//*[@id=\"divfieldvalue_ele\"]/div/div[2]/input");
             IWebElement central_form_dob_unknow = (IWebElement)brow.GetWebDriver.FindElement(Locator_central_dob_unknow);
             central_form_dob_unknow.Click();
             //Age in Year
-            By Locator_central_age_year = By.XPath("/html/body/div[2]/div/div[1]/div/div/form/div[1]/div/div[2]/div[3]/input");
+            By Locator_central_age_year = By.XPath("//*[@id=\"8574235f-d3da-4314-bcb9-7583108181bayears\"]");
             IWebElement central_form_age_year = (IWebElement)brow.GetWebDriver.FindElement(Locator_central_age_year);
             central_form_age_year.Clear();
             central_form_age_year.SendKeys(enter_central_form_age_year);
             //Age in Month
-            By Locator_central_age_month = By.XPath("/html/body/div[2]/div/div[1]/div/div/form/div[1]/div/div[2]/div[4]/input");
+            By Locator_central_age_month = By.XPath("//*[@id=\"8574235f-d3da-4314-bcb9-7583108181bamonths\"]");
             IWebElement central_form_age_month = (IWebElement)brow.GetWebDriver.FindElement(Locator_central_age_month);
             central_form_age_month.Clear();
             central_form_age_month.SendKeys(enter_central_form_age_month);
             //Age in Day
-            By Locator_central_age_day = By.XPath("/html/body/div[2]/div/div[1]/div/div/form/div[1]/div/div[2]/div[5]/input");
+            By Locator_central_age_day = By.XPath("//*[@id=\"8574235f-d3da-4314-bcb9-7583108181badays\"]");
             IWebElement central_form_age_day = (IWebElement)brow.GetWebDriver.FindElement(Locator_central_age_day);
             central_form_age_day.Clear();
             central_form_age_day.SendKeys(enter_central_form_age_day);
             //Weight
-            By Locator_central_weight = By.XPath("/html/body/div[2]/div/div[1]/div/div/form/div[1]/div/div[3]/div[1]/input");
+            By Locator_central_weight = By.XPath("//*[@id=\"abc5c6c0-8809-4d49-8e02-75eb06425d94\"]");
             IWebElement central_form_weight = (IWebElement)brow.GetWebDriver.FindElement(Locator_central_weight);
             central_form_weight.SendKeys(enter_central_form_weight);
             //Height
-            By Locator_central_height = By.XPath("/html/body/div[2]/div/div[1]/div/div/form/div[1]/div/div[3]/div[2]/input");
+            By Locator_central_height = By.XPath("//*[@id=\"304d7849-0b15-49e6-8f45-8a177893134e\"]");
             IWebElement central_form_height = (IWebElement)brow.GetWebDriver.FindElement(Locator_central_height);
             central_form_height.SendKeys(enter_central_form_height);
             //Width
-            By Locator_central_width = By.XPath("/html/body/div[2]/div/div[1]/div/div/form/div[1]/div/div[3]/div[4]/input");
+            By Locator_central_width = By.XPath("//*[@id=\"3acf0a20-b2f4-47cc-9c24-def5af391c16\"]");
             IWebElement central_form_width = (IWebElement)brow.GetWebDriver.FindElement(Locator_central_width);
             central_form_width.SendKeys(enter_central_form_width);
             //Gender - dropdown menu
-            By Locator_central_form_gender = By.XPath("/html/body/div[2]/div/div[1]/div/div/form/div[1]/div/div[4]/div[1]/select");
+            By Locator_central_form_gender = By.XPath("//*[@id=\"4d9fb6e9-0aa8-449d-8931-b2ccac6e1213\"]");
             IWebElement central_form_gender = (IWebElement)brow.GetWebDriver.FindElement(Locator_central_form_gender);
             SelectElement oSelect = new SelectElement(central_form_gender);
             oSelect.SelectByText(enter_central_form_gender);
             // Indigenous Status
-            By Locator_central_form_indigenous_sta = By.XPath("/html/body/div[2]/div/div[1]/div/div/form/div[1]/div/div[4]/div[2]/select");
+            By Locator_central_form_indigenous_sta = By.XPath("//*[@id=\"a065e1d7-7a1e-4b50-9123-69b0b4dd471e\"]");
             IWebElement central_form_indigenous_sta = (IWebElement)brow.GetWebDriver.FindElement(Locator_central_form_indigenous_sta);
             SelectElement oSelect_2 = new SelectElement(central_form_indigenous_sta);
             oSelect_2.SelectByText(enter_central_form_indigenous_sta);
             //Address line1 
-            By Locator_central_address_1 = By.XPath("/html/body/div[2]/div/div[1]/div/div/form/div[1]/div/div[5]/div/input[1]");
+            By Locator_central_address_1 = By.XPath("//*[@id=\"5b852083-cbca-494f-8255-25cca7b7a42daddress1\"]");
             IWebElement central_form_address_1 = (IWebElement)brow.GetWebDriver.FindElement(Locator_central_address_1);
             central_form_address_1.SendKeys(enter_central_form_address_1);
             //Address line2
-            By Locator_central_address_2 = By.XPath("/html/body/div[2]/div/div[1]/div/div/form/div[1]/div/div[5]/div/input[2]");
+            By Locator_central_address_2 = By.XPath("//*[@id=\"5b852083-cbca-494f-8255-25cca7b7a42daddress2\"]");
             IWebElement central_form_address_2 = (IWebElement)brow.GetWebDriver.FindElement(Locator_central_address_2);
             central_form_address_2.SendKeys(enter_central_form_address_2);
             //Suburb
-            By Locator_central_suburb = By.XPath("/html/body/div[2]/div/div[1]/div/div/form/div[1]/div/div[6]/div[1]/div/div[1]/input");
+            By Locator_central_suburb = By.XPath("//*[@id=\"5b852083-cbca-494f-8255-25cca7b7a42dsuburb\"]");
             IWebElement central_form_suburb = (IWebElement)brow.GetWebDriver.FindElement(Locator_central_suburb);
             central_form_suburb.SendKeys(enter_central_form_suburb);
             //Phone
-            By Locator_central_phone = By.XPath("/html/body/div[2]/div/div[1]/div/div/form/div[1]/div/div[8]/div/input");
+            By Locator_central_phone = By.XPath("//*[@id=\"37e9de63-7274-468a-8b75-d41de2a9210b\"]");
             IWebElement central_form_phone = (IWebElement)brow.GetWebDriver.FindElement(Locator_central_phone);
             central_form_phone.SendKeys(enter_central_form_phone);
             //Task id
-            By Locator_central_taskId = By.XPath("/html/body/div[2]/div/div[1]/div/div/form/div[1]/div/div[9]/div/input");
+            By Locator_central_taskId = By.XPath("//*[@id=\"529d10d9-bebf-4000-acbc-67f0d96d42ad\"]");
             IWebElement central_form_taskId = (IWebElement)brow.GetWebDriver.FindElement(Locator_central_taskId);
             central_form_taskId.SendKeys(enter_central_form_taskId);
 
             //------------------------------ 5.Click Save Button -------------------------------
-            By Locator_central_save_btn = By.XPath("//*[@id=\"btnSavePatient\"]");
+            By Locator_central_save_btn = By.XPath("//*[@id=\"btnSavePatientNew\"]");
             IWebElement central_form_btn_save = (IWebElement)brow.GetWebDriver.FindElement(Locator_central_save_btn);
             central_form_btn_save.Click();
 

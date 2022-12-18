@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using OpenQA.Selenium.Support.UI;
 
 namespace Selenium_Learn.BaseClass
@@ -17,25 +18,28 @@ namespace Selenium_Learn.BaseClass
         String test_data = "";
         String expected_results = "";
 
-        //String test_status = "";
+        //------ Initial the browser --------
         public void Init_Browser()
         {
             webDriver = new ChromeDriver(".");
             webDriver.Manage().Window.Maximize();
         }
-        
+        //------ Get Title function --------
         public string Title
         {
             get { return webDriver.Title; }
         }
+        //------ Navigating to specific URL --------
         public void Goto(string url)
         {
             webDriver.Url = url;
         }
+        //------ Close Browser  ------------
         public void Close()
         {
             webDriver.Quit();
         }
+        //------ Get the browser's driver -----
         public IWebDriver GetWebDriver
         {
             get { return webDriver; }
@@ -129,7 +133,7 @@ namespace Selenium_Learn.BaseClass
 	{
         public Browser_ops brow = new Browser_ops();
         public String test_url = "https://rfdsdemo.sandboxwebsite.com.au/auth/login";
-        //----------------------- Start Testing ------------------
+        //----------------------------------------- Start Testing ----------------------------------------------
         [SetUp]
         public void start_Browser()
         {
@@ -147,9 +151,9 @@ namespace Selenium_Learn.BaseClass
             string testresult = context.Result.Outcome.ToString();
             //add to CSV file
             addToCSV(brow.Test_ID, brow.Test_s_o, brow.Browser_Screen, brow.Sub_Browser_Screen, brow.Test_Case, brow.Test_Scenario, brow.Test_Description, brow.Test_Data, brow.Expected_Results, testresult, "Testing_Report.csv");
-            //Console.WriteLine("Iam Tear",brow.Test_ID);
         }
-        //----------------------- End Testing ---------------------
+        //----------------------------------------- End Testing ---------------------------------------------------------
+
 
         //---------- This function is used to Login and navigate to Task-list page ------------------------
         public void login_action()
@@ -204,7 +208,42 @@ namespace Selenium_Learn.BaseClass
             //After Login Successfully - switch window back to RFDS
             brow.GetWebDriver.SwitchTo().Window(lstWindow[0]);
         }
+        //-------------------- This Function is used to search a specifc patient and go to that patient record ----------------
+        public void goto_patient_record(String patient_name, String S_O) { 
+            // ------------------- 1. Login and navigate to Task-list page ------------------------
+            login_action();
+            WebDriverWait wait = new WebDriverWait(brow.GetWebDriver, TimeSpan.FromMinutes(1));
+            Func<IWebDriver, bool> waitForElement_search_bar = new Func<IWebDriver, bool>((IWebDriver Web) =>
+            {
+                Web.FindElement(By.XPath("//*[@id=\"root\"]/div/main/div/div/div/div/div[1]/div[1]/div/div/div[2]/div/div[1]/div[1]/input"));
+                return true;
+            });
+            wait.Until(waitForElement_search_bar);
 
+            //2   Enter the keyword on the search bar
+            By Locator_searchbar = By.XPath("//*[@id=\"root\"]/div/main/div/div/div/div/div[1]/div[1]/div/div/div[2]/div/div[1]/div[1]/input");
+            IWebElement search_bar = (IWebElement)brow.GetWebDriver.FindElement(Locator_searchbar);
+            search_bar.SendKeys(patient_name);
+
+            //3   Click the first row of the table
+            //Explicit wait for elements of the application to load so that actions can be performed on them
+            Func<IWebDriver, bool> waitForElement = new Func<IWebDriver, bool>((IWebDriver Web) =>
+            {
+                Web.FindElement(By.XPath("/html/body/div/div/main/div/div/div/div/div[1]/div[1]/div/div/div[2]/div/div[2]/table/tbody/tr[1]"));
+                return true;
+            });
+            wait.Until(waitForElement);
+            //Click first row
+            By Locator_first_row = By.XPath("/html/body/div/div/main/div/div/div/div/div[1]/div[1]/div/div/div[2]/div/div[2]/table/tbody/tr[1]");
+            IWebElement table_first_row = (IWebElement)brow.GetWebDriver.FindElement(Locator_first_row);
+            table_first_row.Click();
+
+            //add "S/O" at the end of the current url
+            string actual_url = brow.GetWebDriver.Url;
+            string url_with_s_o = actual_url + S_O;
+            brow.Goto(url_with_s_o);
+
+        }
         //-------------------- This Function is used to add the test result list into CSV file ----------------
         public static void addToCSV(String test_id, String test_s_o, String browser_screen, String sub_browser_screen, String test_case, String test_scenario, String test_description, String test_data, String expected_results, String test_result, String filepath)
         {
@@ -263,7 +302,19 @@ namespace Selenium_Learn.BaseClass
                 throw new ApplicationException("This program did an oopsis :", ex);
             }
         }
-
+        //-------------------- This Function is used to check whether the file is exsit in the folder ----------------
+        public bool CheckFile(string name)
+        {
+            string currentFile = @"/Users/ken/Downloads/" + name + ""; 
+            if (File.Exists(currentFile)) //helps to check if the file is present
+            {
+                return true; //if the file exists return boolean true
+            }
+            else
+            {
+                return false; // if the file does not exist return boolean false
+            }
+        }
     }
 }
 

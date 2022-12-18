@@ -13,7 +13,7 @@ namespace Selenium_Learn
         {
             //Enter the data you want to test
             string enter_login_username = "kchen@jamesanthonyconsulting.com.au";
-            string enter_login_password = "******";
+            string enter_login_password = "****Enter_Password****";
             //Enter the test infortmation
             brow.Set_test_id("1");
             brow.Set_test_s_o("Global");

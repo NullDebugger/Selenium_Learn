@@ -30,8 +30,10 @@
     <None Remove="Selenium.WebDriver.ChromeDriver" />
     <None Remove="Selenium.WebDriver.MSEdgeDriver" />
     <None Remove="BaseClass\" />
+    <None Remove="Scenario1_Central\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BaseClass\" />
+    <Folder Include="Scenario1_Central\" />
   </ItemGroup>
 </Project>
